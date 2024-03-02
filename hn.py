@@ -59,7 +59,7 @@ for heading in stories:
             proper_nouns.append(entity.text)
         else:
             continue
-        
+
         word_to_title[entity.text.lower()] = heading
 
 grammar = tracery.Grammar(
@@ -97,5 +97,5 @@ poems = list(poems.values())
 with open("poetry.html", "r") as f:
     template = Template(f.read())
 
-with open("poetry_results.html", "w") as f:
+with open("index.html", "w") as f:
     f.write(template.render(posts=poems))
