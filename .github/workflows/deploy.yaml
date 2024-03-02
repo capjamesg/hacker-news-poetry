@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 1 * * *'
 
 jobs:
   build:
@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           python3 -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip3 install tracery requests flair jinja2
       - name: Commit index.html
         run: |
           git config --local user.email "jamesg@jamesg.blog"
