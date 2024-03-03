@@ -2,7 +2,7 @@
 
 Poetry generated programmatically from the front page of Hacker News. Reset hourly.
 
-[View the latest poems](https://hnpoetry.jamesg.blog)
+[View the latest poems](https://hnpoetry.jamesg.blog).
 
 ## Examples
 
